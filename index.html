@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SORRY MISIS KO</title>
+<style>
+  body { display: flex; align-items: center; justify-content: center; height: 100vh; background-color: #f0f4f8; margin: 0; }
+  .card { text-align: center; padding: 30px; background-color: #fff; border-radius: 20px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); max-width: 400px; }
+  h1 { font-size: 24px; color: #333; margin-bottom: 20px; }
+  button { padding: 10px 20px; background-color: #f76c6c; color: #fff; border: none; border-radius: 10px; cursor: pointer; transition: transform 0.3s, background-color 0.3s; }
+  button:hover { background-color: #f55656; transform: scale(1.05); }
+  .message { margin-top: 20px; opacity: 0; transform: translateY(-20px); transition: opacity 0.5s, transform 0.5s; }
+  .message.show { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Hi asawa ko na mahal na mahal</h1>
+  <button onclick="showApology()">Click mo to </button>
+  <p class="message" id="apologyMessage">Sorry po misis if nadadagdagan ko ung prob mo at na feel mo na wala kang nagawang tama sorry po. sorry if andamo kong nagawang mali sayo sorry po mapatwad mo sana ko at wag mo sanang iwan at manawa sakin kung ganun ugali ko sorry po  iloveyousomuchii </p>
+</div>
+<script>
+  function showApology() {
+    const message = document.getElementById("apologyMessage");
+    message.classList.add("show");
+  }
+</script>
+</body>
+</html>
